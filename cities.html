@@ -1,54 +1,243 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <title>Bootstrap Assignment</title>
-  
+
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" 
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" 
-    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" 
-    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+
 </head>
+<style>
+  .img-fluid{
+    height: 200px;
+    width: 350px;
+  }
+</style>
 <body>
-    <h1>Visit cities with venkateswaraRao Gude</h1>
+  <h1>Visit cities with venkateswaraRao Gude</h1>
+  <div class="container">
+
+    <div class="row">
+
+      <div class="col-sm-2">G</div>
+
+      <div class="col-sm-2">U</div>
+
+      <div class="col-sm-2">D</div>
+
+      <div class="col-sm-2">E</div>
+
+      <div class="col-sm-2">V</div>
+
+      <div class="col-sm-2">E</div>
+    </div>
+    <div class="row">
+      <div class="col-md">Gurugram</div>
+      <div class="col-md">UDDEVALLA</div>
+      <div class="col-md">DEHRADUN</div>
+      <div class="col-md">ERNAKULAM</div>
+      <div class="col-md">VARANASI</div>
+      <div class="col-md">ELLORA</div>
+    </div>
+    <p>If the Size is reducing beyond 576 to 580 then row is colapsing into the column. When we tried to minimize the
+      browser page then immediately the second row(i.e city names) will first convert into column and then letter row
+      will conver into rows</p>
+      
     <div class="container">
-
-        <div class="row">
-
-            <div class="col-sm-2">G</div>
-
-            <div class="col-sm-2">U</div>
-
-            <div class="col-sm-2">D</div>
-
-            <div class="col-sm-2">E</div>
-
-            <div class="col-sm-2">V</div>
-
-            <div class="col-sm-2">E</div>
-
+    <div class="row">
+      <div class="col-md-2">
+        <img src="GURUGRAM.png" class=" img-fluid " alt="Gurugram1">
+      </div>
+      <div class="col-md-2">
+        <img src="UDDEVALLA.png" class=" img-fluid" alt="Uddevalla1">
+      </div>
+      <div class="col-md-2">
+        <img src="DEHRADUN.png" class=" img-fluid" alt="Dehradun1">
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-md-2">
+          <img src="ERNAKULAM.png" class="img-thumbnail" alt="Gurugram2">
         </div>
-
-        <div class="row">
-
-            <div class="col-md">Gurugram</div>
-
-            <div class="col-md">UDDEVALLA</div>
-
-            <div class="col-md">DEHRADUN</div>
-
-            <div class="col-md">ERNAKULAM</div>
-
-            <div class="col-md">VARANASI</div>
-
-            <div class="col-md">ELLORA</div>
-
-            <p>If the Size is reducing beyond 576 to 580 then row is colapsing into the column. When we tried to minimize the browser page then immediately the second row(i.e city names) will first convert into column and then letter row will conver into rows</p>
-
+        <div class="col-md-2">
+          <img src="VARANASI.png" class="img-thumbnail" alt="Uddevalla2">
         </div>
+        <div class="col-md-2">
+          <img src="ELLORA.png" class="img-thumbnail" alt="Dehradun2">
+        </div>
+      </div>
+    </div>
+  </div>
+  <h2>Table with some Letters,Citys,Rivers,Trees</h2>
+  <table class="table table-striped table-bordered table-hover table-striped">
+
+    <tr class="table-danger">
+
+      <th scope="col ">Letter</th>
+      <th scope="col">City</th>
+      <th scoop="col">River</th>
+      <th scoop="col">Tree</th>
+    <tr class="table-info">
+      <th scope="row">G</th>
+      <td>Gurugram</td>
+      <td>Galien River</td>
+      <td>Gladiolus Tree</td>
+    </tr>
+    <tr class="table-warning">
+      <th scope="row">U</th>
+      <td>UDDEVALLA</td>
+      <td>Unadilla River</td>
+      <td>Umbrella Tree</td>
+    </tr>
+    <tr class="table-primary">
+      <th scope="row">D</th>
+      <td>DEHRADUN</td>
+      <td>Donner und Blitzen River</td>
+      <td>Douglas Fir Tree</td>
+    </tr>
+    <tr>
+      <th scope="row">E</th>
+      <td>ERNAKULAM</td>
+      <td>Eek River</td>
+      <td>Eastern Cottonwood Tree</td>
+    </tr>
+    <tr class="table-success">
+      <th scope="row">V</th>
+      <td>VARANASI</td>
+      <td>Ventura River</td>
+      <td>Veronica</td>
+    </tr>
+    <tr class="table-dark">
+      <th scope="row">E</th>
+      <td>ELLORA</td>
+      <td >Edwards River</td>
+      <td >European Larch Tree</td>
+    </tr>
+    </tbody>
+  </table>
+  <div class="container">
+  <button type="button" class="btn">G</button>
+
+  <button type="button" class="btn">U</button>
+
+  <button type="button" class="btn">D</button>
+
+  <button type="button" class="btn">E</button>
+
+  <button type="button" class="btn">V</button>
+
+  <button type="button" class="btn">E</button>
+  <div class="container">
+  <button type="button" class="btn btn-primary">G</button>
+  <button type="button" class="btn btn-secondary">U</button>
+  <button type="button" class="btn btn-success">D</button>
+  <button type="button" class="btn btn-danger">E</button>
+  <button type="button" class="btn btn-warning">V</button>
+  <button type="button" class="btn btn-info">E</button>
+  <div class="btn-toolbar" role="toolbar" aria-label="Button groups">
+
+    <div class="btn-group" role="group" aria-label="Letters with images">
+
+      <button type="button" class="btn btn-success">G</button>
+
+      <button type="button" class="btn btn-success">U</button>
+
+      <button type="button" class="btn btn-success">D</button>
+
+    </div>
+
+    <div class="btn-group" role="group" arial-label="Alert buttons">
+
+      <button type="button" class="btn btn-warning">E</button>
+
+      <button type="button" class="btn btn-warning">V</button>
+
+    </div>
+
+    <div class="btn-group" role="group" arial-label="Remaining letters">
+
+      <button type="button" class="btn btn-danger">E</button>
+
+    </div>
+
+  </div>
+
+<br>
+
+
+
+<div class="dropdown">
+
+  <button class="btn btn-primary dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
+
+    aria-expanded="false">
+
+    Dropdown button
+
+  </button>
+
+  <ul class="dropdown-menu" aria-labelledby="dropdownMenubutton1">
+
+    <li><a class="dropdown-item" href="basic.html">BasicBootStartHTML</a></li>
+
+    <li><a class="dropdown-item" href="advanced.html">AdvancedBootStartHTML</a></li>
+
+  </ul>
+
+</div>
+
+<br>
+
+<br>
+
+<br>  
+
+<br>
+
+
+
+<form>
+
+  <div class="form-group">
+
+   
+
+
+
+  </div>
+
+
+
+  <div class="form-group">
+
+
+
+  </div>
+
+
+
+  <div class="form-check">
+
+
+
+  </div>
+
+</form>
+    </div>
+
+
 </body>
+
 </html>
